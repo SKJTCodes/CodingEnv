@@ -94,9 +94,10 @@ function python
     $pypath = pythonPath
     & $pypath $pythonFile @fileArgs
 }
+# activate conda env in powershell
 function actconda
 {
-    #region conda initialize
+    # region conda initialize
     # !! Contents within this block are managed by 'conda init' !!
     (& "C:\Anaconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
     #endregion
