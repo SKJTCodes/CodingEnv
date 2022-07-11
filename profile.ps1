@@ -102,3 +102,9 @@ function actconda
     (& "C:\Anaconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
     #endregion
 }
+# open guide info folder using chrome. to view *.md file
+function guide
+{
+    param ($guideType)
+    . "$env:EDU\Powershell\guide.ps1" $guideType
+}
