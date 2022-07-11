@@ -108,3 +108,8 @@ function guide
     param ($guideType)
     . "$env:EDU\Powershell\guide.ps1" $guideType
 }
+# Map virtualenv command to file, so no need setup Path env
+function venv
+{
+    . $Env:PYTHON\Scripts\virtualenv $args
+}
