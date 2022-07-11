@@ -1,6 +1,6 @@
 \.idea
 *.txt
-\Git
-\Markdown
-\Powershell
-\Python
+/Git
+/Markdown
+/Powershell
+/Python
