@@ -1,12 +1,13 @@
 import logging
 import logging.handlers
 import os
+import pathlib
 import sys
 from pathlib import Path
 
 
 class Logger:
-    def __init__(self, out_file):
+    def __init__(self, out_file: pathlib.Path):
         os.system("")  # allows colour to be printed in cmd and powershell natively.
         self.out_file = out_file
 

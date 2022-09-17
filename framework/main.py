@@ -9,6 +9,8 @@ args = Parameters(description="Framework project").parse()
 log_path = args.var_dir / "log" / f"debug-{h.date_delta(out_fmt='%Y%m%d-%H%M.%S')}.log"
 log = Logger(log_path).get_logger()
 
+h.clean_logs(log_path.parent, log=log)
+
 
 def main():
     log.info("INFO")
